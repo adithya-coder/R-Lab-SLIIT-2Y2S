@@ -2,32 +2,32 @@
 
 
 print(100:200)
-#get cunt working dir
+# get cunt working dir
  getwd()
- #change curent working d
+ # change curent working d
  getwd()
- #help 
+ # help 
  ?solve
  help("data.frame")
- #install package
+ # install package
  install.packages("ggplot2")
  
- #vector
+ # vector
  w<-c(1,2,3,4,5)
  w
  class(w)
  
- #factor
+ # factor
  gender<-c(0,1,0,1,0,0,1)
  gender
  
  Gender <-factor(gender,c(0,1),c("male","female"))
  Gender
- #male   female male   female male   male   female
+ # male   female male   female male   male   female
   #Levels: male female
  
  
- #list
+ # list
  p<-c(1,2,3)
  q<-"green"
  r<-21
@@ -37,11 +37,11 @@ print(100:200)
  Data<-list(p,q,r)
  Data
  
- #metrix
+ # metrix
  matris1<- matrix(c(1,2,3,4),nrow = 2,ncol = 2,byrow = True)
  matris1
  
- #data frame
+ # data frame
  height<-c(67,89,43,90)
  weigth<-c(56,34,49,67)
  data_set<- data.frame(height,weigth)
@@ -60,40 +60,40 @@ print(100:200)
  # attach modification to file
  attach(data)
  
- #frequency table
+ # frequency table
  gender.freq<-table(Gender)
  acc.freq<-table(Accomodation)
  gender.freq
  acc.freq
  
- #create pie chart
+ # create pie chart
  pie(gender.freq,"Pie chart for Gender")
  pie(acc.freq,"Pie chart acc")
  
- #bar chart
+ # bar chart
  barplot(gender.freq,main = "Gender",ylab = "freq")
  abline(h=0)
  
- #boxplot
+ # boxplot
  boxplot(Age,main="boxplot for age",ylab="Age",outpch=8)
  
  
- #two way freq table
+ # two way freq table
  gender_acc.freq<-table(Gender , Accomodation)
  gender_acc.freq
  barplot(gender_acc.freq,main = "gender acc ",legend=row.names(gender_acc.freq))
  abline(h=0)
  
  
- #clusted bar chart
+ # clusted bar chart
  barplot(gender_acc.freq,beside = True,main = "Gender & Accomadation",legend=row.names(gender_acc.freq))
  abline(h=0)
 
- #side by side boxplot                                                                            outpch using outline pattern= any number
+ # side by side boxplot                                                                            outpch using outline pattern= any number
  boxplot( AGe~Gender,main = "Gender & Accomadation",xlab="Gender",ylab="Age")
  boxplot(AGe~Accomodation,main="Boxplot for Age by Accmodation",xlab = "Accmodation",ylab = "Age",outpch=2)
  
- #get mean two variable categorical
+ # get mean two variable categorical
  xtabs(AGe~Gender+Accomodation)/gender_acc.freq
 # --------------------------------------------------------------------------------------------
 # x <- seq(-pi, pi, 0.1)
