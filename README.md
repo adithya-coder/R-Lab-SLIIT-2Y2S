@@ -1,6 +1,6 @@
 *                       R-Lab-SLIIT-2Y2S
 
-# R-Lab-SLIIT-2Y2S
+# display 1 to 200 values
 
 print(100:200)
 
